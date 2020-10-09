@@ -1,0 +1,20 @@
+# .inputrc
+
+# Up arrow after typing searches through past commands
+"\e[A": history-search-backward
+
+# Down arrow after typing searches through past commands
+"\e[B": history-search-forward
+    
+# Ctrl+Right Arrow: Next word
+"\eOC": forward-word
+    
+# Ctrl+Left Arrow: Prev word
+"\eOD": backward-word
+    
+# Ctrl-Delete: delete next word
+"\e[3;5~": shell-kill-word
+    
+# Ctrl-Backspace
+"\C-H": shell-backward-kill-word
+set show-all-if-ambiguous on
